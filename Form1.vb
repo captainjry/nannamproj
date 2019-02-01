@@ -150,6 +150,8 @@
                 PBoxVIEW.Invalidate()
             End If
         End If
+        AxWindowsMediaPlayer2.Ctlcontrols.currentPosition = CDbl(NumericUpDown1.Value)
+
     End Sub
 
     Private Sub PBoxWAVE_Paint(sender As Object, e As System.Windows.Forms.PaintEventArgs) Handles PBoxWAVE.Paint
@@ -334,8 +336,4 @@
         Return brush
 
     End Function
-
-    Private Sub AxWindowsMediaPlayer2_Enter(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer2.Enter
-
-    End Sub
 End Class
